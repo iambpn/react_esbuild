@@ -1,6 +1,6 @@
 import * as esbuild from "esbuild";
 
-console.log("Building for ENV:", process.env.NODE_ENV);
+console.log("Building for ENV:", process.env.NODE_ENV || "production");
 
 const ctx = await esbuild.context({
   entryPoints: ["src/index.jsx"],
